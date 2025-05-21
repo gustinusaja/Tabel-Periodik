@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1c92d2, #f2fcfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 60px);
+    grid-gap: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 80px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.element:hover {
+    transform: scale(1.1);
+    background-color: #3e8e41;
+}
+
+.element .number {
+    font-size: 0.8em;
+    align-self: flex-start;
+}
+
+.element .symbol {
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+.element .name {
+    font-size: 0.6em;
+    margin: 2px 0;
+}
+
+.element .weight {
+    font-size: 0.5em;
+    align-self: flex-end;
+}
+
+.alkali-metal {
+    background-color: #ff8c00;
+}
+
+.alkaline-earth {
+    background-color: #ffd700;
+}
+
+.transition-metal {
+    background-color: #adff2f;
+}
+
+.post-transition-metal {
+    background-color: #deb887;
+}
+
+.metalloid {
+    background-color: #00ced1;
+}
+
+.nonmetal {
+    background-color: #ff4500;
+}
+
+.halogen {
+    background-color: #ff6347;
+}
+
+.noble-gas {
+    background-color: #1e90ff;
+}
+
+/* Add more classes for different groups if needed */
